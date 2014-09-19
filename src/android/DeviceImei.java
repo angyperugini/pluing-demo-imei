@@ -1,4 +1,4 @@
-package com.equipnet.DeviceImei;
+package com.plugin.DeviceImei;
 
 import java.util.TimeZone;
 
