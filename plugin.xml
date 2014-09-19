@@ -1,30 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
- 
-    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-            id="com.equipnet.plugin" version="0.2.3">
-
-    <name>Device</name>
-    <description>imei plugin</description>
-    <license>MIT</license>
-    <keywords>phonegap,calendar</keywords>
- 
- 
-    <js-module src="www/deviceinfo.js" name="deviceinfo">
-        <clobbers target="window.deviceinfo" />
-    </js-module>
- 
-    <!-- android -->
-    <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="deviceinfo">
-                <param name="android-package" value="com.equipnet.plugin"/>
-            </feature>
-        </config-file>
- 
-        <source-file src="src/android/DeviceInfo.java" target-dir="src/com/equipnet/plugin" />      
-     </platform>          
-</plugin>
-
 
 +<?xml version="1.0" encoding="UTF-8"?>
 +
