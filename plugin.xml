@@ -21,6 +21,6 @@
             </feature>
         </config-file>
  
-        <source-file src="android/DeviceInfo.java" target-dir="src/com/equipnet/plugin" />      
+        <source-file src="src/android/DeviceInfo.java" target-dir="src/com/equipnet/plugin" />      
      </platform>          
 </plugin>
