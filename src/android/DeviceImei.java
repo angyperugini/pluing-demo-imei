@@ -54,11 +54,10 @@ public class DeviceImei extends CordovaPlugin {
     
     /* funzione per predere l'imei del dispositivo*/
     
-    public String getImei() {
-    	Telephonymanager telefonymanager = (telephonymManager)this.cordova.getActivity().getSystemService(context.TELEPHONY_SERVICE);
-    	String imei = telephonyManager.getDeviceId();
-    	return imei;
-    
+     public String getImei() {
+    	TelephonyManager telephonyManager = (TelephonyManager)this.cordova.getActivity().getSystemService(Context.TELEPHONY_SERVICE);
+        String imei = telephonyManager.getDeviceId();
+        return imei;
     }
     
 }
