@@ -1,4 +1,4 @@
-cordova.define("com.equipnet.deviceimei", function(require, exports, module) { 
+cordova.define("com.plugin.deviceimei", function(require, exports, module) { 
 
 var argscheck = require('cordova/argscheck'),
     channel = require('cordova/channel'),
@@ -41,10 +41,10 @@ function DeviceImei() {
  */
 Device.prototype.getInfo = function(successCallback, errorCallback) {
     argscheck.checkArgs('fF', 'DeviceImei.getInfo', arguments);
-    exec(successCallback, errorCallback, "DeviceImeisrc", "getDeviceImei", []);
+    exec(successCallback, errorCallback, "DeviceImei", "getDeviceImei", []);
 };
 
-module.exports = new Device();
+module.exports = new DeviceImei();
 
 });
     
