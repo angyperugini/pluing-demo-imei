@@ -7,7 +7,7 @@ version="1.0.0">
 <keywords>imei</keywords>
 <license></license>
 <engines>
-<engine name="cordova" version="3.5.0" />
+<engine name="cordova" version="3.5.1" />
 </engines>
 <js-module src="www/imei.js" name="imei">
 <clobbers target="imei" />
