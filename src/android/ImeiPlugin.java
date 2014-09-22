@@ -23,7 +23,7 @@ public class ImeiPlugin extends CordovaPlugin {
 
 	public TelephonyManager tm;
 
-	public void initialize(CordovaInterface cordova, CordovaWebView) {
+	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
 		//Il plugin non ha accesso diretto al contesto dell'applicazione
 		//e quindi dobbiamo arrivarci
@@ -36,7 +36,7 @@ public class ImeiPlugin extends CordovaPlugin {
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext)
 			throws JSONException{
 		try {
-			(ACTION_GET_PHONE_IMEI.equals(action)) {
+			if(ACTION_GET_PHONE_IMEI.equals(action)) {
 				callbackContext.success(tm.getDeviceId());
 				return true;
 			}
