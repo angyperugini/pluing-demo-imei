@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.equipnet.imei"
+version="1.0.0">
+<name>Imei</name>
+<author>A. Perugini</author>
+<description>Acquisizione numero imei.</description>
+<keywords>imei</keywords>
+<license></license>
+<engines>
+<engine name="cordova" version="3.5.0" />
+</engines>
+<js-module src="www/imei.js" name="imei">
+<clobbers target="imei" />
+</js-module>
+<platform name="android">
+<!-- android-specific elements -->
+<source-file src="src/android/ImeiPlugin.java" target-dir="src/com/equipnet/imei" />
+<config-file target="res/xml/config.xml" parent="/*">
+<feature name="ImeiPlugin" >
+<param name="android-package" value="com.equipnet.imei.ImeiPlugin"/>
+</feature>
+</config-file>
+<config-file target="AndroidManifest.xml" parent="/*">
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+</config-file>
+</platform>
+<platform name="ios">
+<!-- ios-specific elements -->
+</platform>
+</plugin>
