@@ -1,4 +1,4 @@
-var cordova = require('cordova');
+cordova.define("com.equipnet.imei.imei", function(require, exports, module) { var cordova = require('cordova');
 
 var imei = {
 	getImeiNumber : function(successCallback, errorCallback){
@@ -7,3 +7,5 @@ var imei = {
 };
 
 module.exports = imei;
+
+});
