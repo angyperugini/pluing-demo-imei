@@ -10,7 +10,7 @@ version="1.0.0">
 <engine name="cordova" version="3.5.1" />
 </engines>
 <js-module src="www/imei.js" name="imei">
-<clobbers target="imei" />
+<clobbers target="window.imei" />
 </js-module>
 <platform name="android">
 <!-- android-specific elements -->
