@@ -37,7 +37,8 @@ public class ImeiPlugin extends CordovaPlugin {
 			throws JSONException{
 		try {
 			if(ACTION_GET_PHONE_IMEI.equals(action)) {
-				callbackContext.success(tm.getDeviceId());
+				String imei = tm.getDeviceId();
+				callbackContext.success(imei);
 				return true;
 			}
 
